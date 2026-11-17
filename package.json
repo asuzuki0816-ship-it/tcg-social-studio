@@ -1,0 +1,18 @@
+{
+  "name": "tcg-social-studio-tools",
+  "version": "4.4.11",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check_env.mjs",
+    "check:client": "node scripts/check_client.mjs",
+    "browser": "npx --yes @puppeteer/browsers install chrome@stable --path .browsers"
+  },
+  "dependencies": {
+    "playwright-core": "1.62.1",
+    "ffmpeg-static": "5.3.0"
+  }
+}
